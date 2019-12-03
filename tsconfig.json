@@ -11,9 +11,8 @@
     "noImplicitReturns": true,
     "noImplicitThis": true,
     "noImplicitAny": true,
-    "strictNullChecks": true,
     "noUnusedLocals": true,
-    "suppressImplicitAnyIndexErrors": true
+    "strict": true
   },
   "files": ["src/index.ts"],
   "exclude": ["node_modules", "build", "scripts", "jest"]
