@@ -8,7 +8,7 @@
 // Now, ready to do you some TypeScript?!
 
 // ======== Exercise 1: Basic types ========
-import exercise1 from './Exercise_1_Basic_Types/exercise1';
+import exercise1 from "./Exercise_1_Basic_Types/exercise1";
 exercise1();
 
 // ======== Exercise 2: Interfaces ==========
@@ -26,7 +26,6 @@ exercise1();
 // ======== Exercise 5: Code flow  =========
 // import exercise5 from './Exercise_5_Classes/exercise5';
 // exercise5();
-
 
 // ⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇
 //   Solutions
