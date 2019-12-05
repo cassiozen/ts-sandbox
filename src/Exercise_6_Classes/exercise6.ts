@@ -1,5 +1,5 @@
 // ⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇
-//    Exercise 5 – Classes
+//    Exercise 6 – Classes
 // ⏈⏈⏈⏈⏈⏈⏈⏈⏈⏈⏈⏈⏈⏈⏈⏈⏈⏈⏈⏈⏈⏈⏈⏈⏈⏈⏈⏈
 
 // Objectives:
@@ -7,23 +7,21 @@
 // • Add access modifiers to class members
 
 export default () => {
-
-  // ======== Exercise 5.1 ========
+  // ======== Exercise 6.1 ========
   // Goals:
   // • Add explicit parameter type to the greet method
   // • Add explicit return type to the greet method
 
   class MC {
-    greet(event = 'party') {
+    greet(event = "party") {
       return `Welcome to the ${event}`;
     }
   }
 
   const mc = new MC();
-  console.log('[Exercise 5.1]', mc.greet('show'));
+  console.log("[Exercise 6.1]", mc.greet("show"));
 
-
-  // ======== Exercise 5.2 ========
+  // ======== Exercise 6.2 ========
   // Goals:
   // • Add explicit parameter types to constructor
   // • Add typed parameters for storing values
@@ -35,12 +33,11 @@ export default () => {
     }
   }
 
-  const jane = new Person('Jane', 31);
+  const jane = new Person("Jane", 31);
 
-  console.log('[Exercise 5.2]', `The new person's name is ${jane.name}.`);
+  console.log("[Exercise 6.2]", `The new person's name is ${jane.name}.`);
 
-
-  // ======== Exercise 5.3 ========
+  // ======== Exercise 6.3 ========
   // Goals:
   // • Explicitly make the title and salary properties publicly available
   // • Reduce class to three lines of code while maintaining functionality
@@ -54,12 +51,14 @@ export default () => {
     }
   }
 
-  const employee = new Employee('Engineer', 100000);
+  const employee = new Employee("Engineer", 100000);
 
-  console.log('[Exercise 5.3]', `The new employee's title is ${employee.title} and they earn $ ${employee.salary}.`);
+  console.log(
+    "[Exercise 6.3]",
+    `The new employee's title is ${employee.title} and they earn $ ${employee.salary}.`
+  );
 
-
-  // ======== Exercise 5.4 ========
+  // ======== Exercise 6.4 ========
   // Goals:
   // • Add complete typing
   // • Make the Snake class inherit from Animal
@@ -75,7 +74,7 @@ export default () => {
 
   class Snake {
     move(meters) {
-      console.log('Slithering...');
+      console.log("Slithering...");
       // should call on parent's `move` method, w/ a default
       // slither of 5 meters
     }
@@ -83,7 +82,7 @@ export default () => {
 
   class Pony {
     move(meters) {
-      console.log('Galloping...');
+      console.log("Galloping...");
       // should call on parent's `move` method, w/ a default
       // gallop of 60 meters
     }
@@ -102,24 +101,30 @@ export default () => {
   pokey.move(34);
   console.log(pokey.name); // Should return error
 
-  // ======== Exercise 5.5 ========
+  // ======== Exercise 6.5 ========
   // Goals:
   // • Make it so that only the Desk and Chair classes can see the
   //   manufacturer member
 
   class Furniture {
-    constructor(manufacturer: string = 'IKEA') {}
+    constructor(manufacturer: string = "IKEA") {}
   }
 
   class Desk extends Furniture {
     kind() {
-      console.log('[Exercise 5.5]', `This is a desk made by ${this.manufacturer}`);
+      console.log(
+        "[Exercise 6.5]",
+        `This is a desk made by ${this.manufacturer}`
+      );
     }
   }
 
   class Chair extends Furniture {
     kind() {
-      console.log('[Exercise 5.5]', `This is a chair made by ${this.manufacturer}`);
+      console.log(
+        "[Exercise 6.5]",
+        `This is a chair made by ${this.manufacturer}`
+      );
     }
   }
 
@@ -131,19 +136,22 @@ export default () => {
   chair.kind();
   chair.manufacturer; // Should return error
 
-  // ======== Exercise 5.6 ========
+  // ======== Exercise 6.6 ========
   // Goals:
   // • Eliminate the error without changing references to `Student.school`
 
   class Student {
-    public school: string = 'Harry Herpson High School';
-    constructor(private name: string) {};
+    public school: string = "Harry Herpson High School";
+    constructor(private name: string) {}
     introduction() {
-      console.log('[Exercise 5.6]', `Hi, my name is ${this.name} and I attend ${Student.school}`);
+      console.log(
+        "[Exercise 6.6]",
+        `Hi, my name is ${this.name} and I attend ${Student.school}`
+      );
     }
   }
 
-  const student = new Student('Morty');
+  const student = new Student("Morty");
   console.log(Student.school);
   student.introduction();
-}
+};

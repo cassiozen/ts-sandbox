@@ -3,15 +3,25 @@
   "description": "Exercises for TypeSscript",
   "version": "0.1.0",
   "main": "./src/index.ts",
-  "dependencies": {},
+  "dependencies": {
+    "nodemon": "^2.0.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
   "devDependencies": {
     "@types/node": "^12.12.14",
+    "@types/react": "^16.9.14",
+    "@types/react-dom": "^16.9.4",
     "@typescript-eslint/eslint-plugin": "^2.10.0",
     "@typescript-eslint/parser": "^2.10.0",
     "eslint": "^6.7.2",
-    "typescript": "^3.7.2"
+    "source-map-loader": "^0.2.4",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.2",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
   },
   "scripts": {
-    "start": "tsc -w"
+    "start": "webpack -w & nodemon dist/main.js"
   }
 }
