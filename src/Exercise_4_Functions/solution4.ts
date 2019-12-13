@@ -1,5 +1,5 @@
 // ⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇
-//   Solution 3 – Functions
+//   Solution 4 – Functions
 // ⏈⏈⏈⏈⏈⏈⏈⏈⏈⏈⏈⏈⏈⏈⏈⏈⏈⏈⏈⏈⏈⏈⏈⏈⏈⏈⏈⏈
 
 // Objectives:
@@ -9,7 +9,7 @@
 //   flexible generic functions
 
 export default () => {
-  // ======== Solution 3.1 ========
+  // ======== Solution 4.1 ========
   // Instructions:
   // • Add explicit parameter types and return type
   // • Fix any errors resulting from invalid types
@@ -24,9 +24,9 @@ export default () => {
 
   const someSum: number = sumArray([3, 6, 9]);
 
-  console.log('[Solution 3.1]', `3 + 6 + 9 == ${someSum}`);
+  console.log("[Solution 4.1]", `3 + 6 + 9 == ${someSum}`);
 
-  // ======== Solution 3.2 ========
+  // ======== Solution 4.2 ========
   // Instructions:
   // • Add explicit parameter types and return types to the `deposit` function
   // • Make the function's `message` parameter *optional*
@@ -42,68 +42,76 @@ export default () => {
   };
 
   bankAccount.deposit(20);
-  bankAccount.deposit(10, 'Deposit received');
+  bankAccount.deposit(10, "Deposit received");
 
-  console.log('[Solution 3.2]', `Account value: $${bankAccount.money}`);
+  console.log("[Solution 4.2]", `Account value: $${bankAccount.money}`);
 
-  // ======== Solution 3.3 ========
+  // ======== Solution 4.3 ========
   // For a given word, we compute its Scrabble® score.
   // Instructions:
   // • Add type annotations wherever possible
 
   function computeScore(word: string): number {
-    const letters: string[] = word.toUpperCase().split('');
-    return letters.reduce((accum: number, curr: string) => accum += getPointsFor(curr), 0);
+    const letters: string[] = word.toUpperCase().split("");
+    return letters.reduce(
+      (accum: number, curr: string) => (accum += getPointsFor(curr)),
+      0
+    );
   }
 
   function getPointsFor(letter: string) {
     const lettersAndPoints: [string, number][] = [
-      ['AEOIULNRST', 1],
-      ['DG', 2],
-      ['BCMP', 3],
-      ['FHVWY', 4],
-      ['K', 5],
-      ['JX', 8],
-      ['QZ', 10],
+      ["AEOIULNRST", 1],
+      ["DG", 2],
+      ["BCMP", 3],
+      ["FHVWY", 4],
+      ["K", 5],
+      ["JX", 8],
+      ["QZ", 10]
     ];
 
-    return lettersAndPoints.reduce((computedScore: number, pointsTuple: [string, number]) => {
-      const [letters, score]: [string, number] = pointsTuple;
-      if (letters.split('').find((ll) => ll === letter)) {
-        return computedScore += score;
-      }
-      return computedScore;
-    }, 0);
+    return lettersAndPoints.reduce(
+      (computedScore: number, pointsTuple: [string, number]) => {
+        const [letters, score]: [string, number] = pointsTuple;
+        if (letters.split("").find(ll => ll === letter)) {
+          return (computedScore += score);
+        }
+        return computedScore;
+      },
+      0
+    );
   }
 
-  console.log('[Solution 3.3]', `zoo is worth ${computeScore('zoo')} points.`);
+  console.log("[Solution 4.3]", `zoo is worth ${computeScore("zoo")} points.`);
 
-  // ======== Solution 3.4 ========
+  // ======== Solution 4.4 ========
   // Instructions:
   // • Add explicit parameter types and return types
   // • Add a default greeting: "hello"
 
-  function greet(greeting: string = 'hello') {
+  function greet(greeting: string = "hello") {
     return greeting.toUpperCase();
   }
 
   const defaultGreeting = greet();
-  const portugueseGreeting = greet('Oi como vai!');
+  const portugueseGreeting = greet("Oi como vai!");
 
-  console.log('[Solution 3.4]', defaultGreeting, portugueseGreeting);
+  console.log("[Solution 4.4]", defaultGreeting, portugueseGreeting);
 
-  // ======== Solution 3.5 ========
+  // ======== Solution 4.5 ========
   // Instructions:
   // • Add parameter type annotation
   // • Even though this function doesn't return, add an explicit return type
 
   function layEggs(quantity: number, color: string): void {
-    console.log(`[Solution 3.5] You just laid ${quantity} ${color} eggs. Good job!`);
+    console.log(
+      `[Solution 4.5] You just laid ${quantity} ${color} eggs. Good job!`
+    );
   }
 
-  layEggs(10, 'blue');
+  layEggs(10, "blue");
 
-  // ======== Solution 3.6 ========
+  // ======== Solution 4.6 ========
   // Here we've initialized two variables with function types.
   // Later we assign them to functions.
   // Instructions:
@@ -112,17 +120,17 @@ export default () => {
   let multiply: (val1: number, val2: number) => number;
   let capitalize: (val: string) => string;
 
-  capitalize = function (value: string): string {
+  capitalize = function(value: string): string {
     return `${value.charAt(0).toUpperCase()}${value.slice(1)}`;
-  }
+  };
 
-  multiply = function (x: number, y: number): number {
+  multiply = function(x: number, y: number): number {
     return x * y;
-  }
+  };
 
-  console.log('[Solution 3.6]', capitalize(`nifty ${multiply(5, 10)}`));
+  console.log("[Solution 4.6]", capitalize(`nifty ${multiply(5, 10)}`));
 
-  // ======== Solution 3.7 ========
+  // ======== Solution 4.7 ========
   // Currently, our function `pushToCollection` accepts *any* item and adds it,
   // (indiscriminantly) to *any* kind of array.
   //
@@ -148,15 +156,18 @@ export default () => {
   }
 
   // Add some stuff to the collections
-  pushToCollection('false', stringCollection);
-  pushToCollection('hi', stringCollection);
-  pushToCollection('[]', stringCollection);
+  pushToCollection("false", stringCollection);
+  pushToCollection("hi", stringCollection);
+  pushToCollection("[]", stringCollection);
 
   pushToCollection(1, numberCollection);
   pushToCollection(2, numberCollection);
   pushToCollection(3, numberCollection);
 
-  const incrementedByTwo = numberCollection.map((num) => num + 2);
+  const incrementedByTwo = numberCollection.map(num => num + 2);
 
-  console.log('[Solution 3.7]', `[${incrementedByTwo}] should deeply equal [3,4,5]`);
-}
+  console.log(
+    "[Solution 4.7]",
+    `[${incrementedByTwo}] should deeply equal [3,4,5]`
+  );
+};

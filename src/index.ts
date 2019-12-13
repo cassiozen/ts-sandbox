@@ -11,21 +11,21 @@
 //import exercise1 from "./Exercise_1_Basic_Types/exercise1";
 //exercise1();
 
-// ======== Exercise 2: Interfaces ==========
-// import exercise2 from './Exercise_2_Interfaces/exercise2';
+// ======== Exercise 2: Types ==========
+// import exercise2 from './Exercise_2_Types/exercise2';
 // exercise2();
 
-// ======== Exercise 3: Functions ============
-// import exercise3 from './Exercise_3_Functions/exercise3';
+// ======== Exercise 3: Interfaces ============
+// import exercise3 from './Exercise_3_Interfaces/exercise3';
 // exercise3();
 
-// ======== Exercise 4: Types =========
-// import exercise4 from './Exercise_4_Types/exercise4';
+// ======== Exercise 4: Functions =========
+// import exercise4 from "./Exercise_4_Functions/exercise4";
 // exercise4();
 
 // ======== Exercise 5: React  =========
-import solution5 from "./Exercise_5_React/solution5";
-solution5();
+// import solution5 from "./Exercise_5_React/solution5";
+// solution5();
 // ======== Exercise 6: Classes  =========
 // import exercise6 from './Exercise_6_Classes/exercise6';
 // exercise6();
@@ -38,18 +38,22 @@ solution5();
 // import solution1 from './Exercise_1_Basic_Types/solution1';
 // solution1();
 
-// ======== Solution 2: Functions ==========
-// import solution2 from './Exercise_2_Interfaces/solution2';
+// ======== Solution 2: Types ==========
+// import solution2 from './Exercise_2_Types/solution2';
 // solution2();
 
-// ======== Solution 3: Classes ============
-// import solution3 from './Exercise_3_Functions/solution3';
+// ======== Solution 3: Interfaces ============
+// import solution3 from './Exercise_3_Interfaces/solution3';
 // solution3();
 
-// ======== Solution 4: Interfaces =========
-// import solution4 from './Exercise_4_Types/solution4';
+// ======== Solution 4: Functions =========
+// import solution4 from './Exercise_4_Functions/solution4';
 // solution4();
 
-// ======== Solution 5: Code flow  =========
-// import solution5 from './Exercise_5_Classes/solution5';
+// ======== Solution 5: React  =========
+// import solution5 from './Exercise_5_React/solution5';
 // solution5();
+
+// ======== Solution 6: Code flow  =========
+// import solution6 from './Exercise_6_Classes/solution6';
+// solution6();
