@@ -8,8 +8,8 @@
 // Now, ready to do you some TypeScript?!
 
 // ======== Exercise 1: Basic types ========
-//import exercise1 from "./Exercise_1_Basic_Types/exercise1";
-//exercise1();
+// import exercise1 from './Exercise_1_Basic_Types/exercise1';
+// exercise1();
 
 // ======== Exercise 2: Union Types ==========
 // import exercise2 from './Exercise_2_Union_Types/exercise2';
@@ -20,11 +20,11 @@
 // exercise3();
 
 // ======== Exercise 4: Functions =========
-// import exercise4 from "./Exercise_4_Functions/exercise4";
+// import exercise4 from './Exercise_4_Functions/exercise4';
 // exercise4();
 
 // ======== Exercise 5: React  =========
-// import solution5 from "./Exercise_5_React/solution5";
+// import solution5 from './Exercise_5_React/solution5';
 // solution5();
 
 // ⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇
@@ -48,5 +48,5 @@
 // solution4();
 
 // ======== Solution 5: React  =========
-// import solution5 from "./Exercise_5_React/solution5";
+// import solution5 from './Exercise_5_React/solution5';
 // solution5();
