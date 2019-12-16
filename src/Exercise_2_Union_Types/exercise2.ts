@@ -1,12 +1,12 @@
 // ⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇
-//   Exercise 2 – Types
+//   Exercise 2 – Union Types
 // ⏈⏈⏈⏈⏈⏈⏈⏈⏈⏈⏈⏈⏈⏈⏈⏈⏈⏈⏈⏈⏈⏈⏈⏈⏈⏈⏈⏈
 
 // Objectives:
-// • Understand how TypeScript performs code flow analysis
-// • Non-Nullable types
-// • Create and apply union and intersection types
-// • Use basic type guards (narrowing types w/ typeof, instanceof, etc.)
+// • See how TypeScript performs code flow analysis
+// • Understand Non-Nullable types
+// • Create and apply union types
+// • Use basic type guards (narrowing types w/ typeof)
 
 export default () => {
   // ======== Exercise 2.0 ========
