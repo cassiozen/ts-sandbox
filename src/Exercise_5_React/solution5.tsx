@@ -22,12 +22,12 @@ export default () => {
   // Instructions:
   // • Loren ipsum
 
-  interface CardProps {
+  type CardProps = {
     title: string;
     subtitle?: string;
     collapsed: boolean;
     text: string;
-  }
+  };
 
   const Card = ({ title, subtitle, collapsed, text }: CardProps) => {
     const classes = collapsed ? "card open" : "card collapsed";
