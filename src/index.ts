@@ -11,12 +11,12 @@
 //import exercise1 from "./Exercise_1_Basic_Types/exercise1";
 //exercise1();
 
-// ======== Exercise 2: Types ==========
-// import exercise2 from './Exercise_2_Types/exercise2';
+// ======== Exercise 2: Union Types ==========
+// import exercise2 from './Exercise_2_Union_Types/exercise2';
 // exercise2();
 
 // ======== Exercise 3: Interfaces ============
-// import exercise3 from './Exercise_3_Interfaces/exercise3';
+// import exercise3 from './Exercise_3_Type_Aliases/exercise3';
 // exercise3();
 
 // ======== Exercise 4: Functions =========
@@ -26,9 +26,6 @@
 // ======== Exercise 5: React  =========
 // import solution5 from "./Exercise_5_React/solution5";
 // solution5();
-// ======== Exercise 6: Classes  =========
-// import exercise6 from './Exercise_6_Classes/exercise6';
-// exercise6();
 
 // ⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇
 //   Solutions
@@ -39,11 +36,11 @@
 // solution1();
 
 // ======== Solution 2: Types ==========
-// import solution2 from './Exercise_2_Types/solution2';
+// import solution2 from './Exercise_2_Union_Types/solution2';
 // solution2();
 
 // ======== Solution 3: Interfaces ============
-// import solution3 from './Exercise_3_Interfaces/solution3';
+// import solution3 from './Exercise_3_Type_Aliases/solution3';
 // solution3();
 
 // ======== Solution 4: Functions =========
@@ -51,9 +48,5 @@
 // solution4();
 
 // ======== Solution 5: React  =========
-// import solution5 from './Exercise_5_React/solution5';
+// import solution5 from "./Exercise_5_React/solution5";
 // solution5();
-
-// ======== Solution 6: Code flow  =========
-// import solution6 from './Exercise_6_Classes/solution6';
-// solution6();
