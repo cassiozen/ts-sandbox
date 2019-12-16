@@ -1,3 +1,5 @@
+const NodemonPlugin = require("nodemon-webpack-plugin"); // eslint-disable-line
+
 module.exports = {
   mode: "production",
 
@@ -27,5 +29,18 @@ module.exports = {
         loader: "source-map-loader"
       }
     ]
+  },
+
+  plugins: [
+    new NodemonPlugin({
+      quiet: true
+    })
+  ],
+  stats: {
+    assets: false,
+    builtAt: false,
+    entrypoints: false,
+    hash: false,
+    modules: false
   }
 };
