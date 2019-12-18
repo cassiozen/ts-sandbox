@@ -10,9 +10,10 @@
 
 export default () => {
   // ======== Exercise 2.0 ========
-  // In strict mode, types in Typescript are non-nullable - you cannot assign `null` or `undefined`.
+  // In strict mode, types in Typescript are non-nullable, that is,
+  // you cannot assign `null` or `undefined` to variables types as `string` or `number`, for example
   // Instructions:
-  // • Fix the error on lines 19 and 20 by setting the type of `secretWord` to `string OR null OR undefined`
+  // • Fix the error on lines 21 and 22 by setting the type of `secretWord` to `string OR null OR undefined`
   //   (Also called a Union type)
 
   let secretWord: string;
@@ -40,6 +41,7 @@ export default () => {
     }
 
     text; // text: null | undefined
+    return;
   }
 
   function trimmedLength2(text: string | null | undefined) {
@@ -56,6 +58,7 @@ export default () => {
     }
 
     text; // text: never
+    return;
   }
 
   function trimmedLength3(text: any) {
@@ -66,9 +69,15 @@ export default () => {
     }
 
     text; // text: any (note how TS does not subtract types from `any`)
+    return;
   }
 
-  console.log("[Exercise 2.1]", `${trimmedLength1("   hi     ")}`);
+  console.log(
+    "[Exercise 2.1]",
+    `${trimmedLength1("   Ho     ")} 
+    ${trimmedLength2("   ho     ")} 
+    ${trimmedLength3("   ho    ")}`
+  );
 
   // ======== Exercise 2.2 ========
   // Instructions:

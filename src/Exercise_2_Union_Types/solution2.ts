@@ -10,9 +10,10 @@
 
 export default () => {
   // ======== Exercise 2.0 ========
-  // In strict mode, types in Typescript are non-nullable - you cannot assign `null` or `undefined`.
+  // In strict mode, types in Typescript are non-nullable, that is,
+  // you cannot assign `null` or `undefined` to variables types as `string` or `number`, for example
   // Instructions:
-  // • Fix the error on lines 19 and 20 by setting the type of `secretWord` to `string OR null OR undefined`
+  // • Fix the error on lines 21 and 22 by setting the type of `secretWord` to `string OR null OR undefined`
   //   (Also called a Union type)
 
   let secretWord: string | null | undefined;
