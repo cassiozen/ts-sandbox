@@ -1,4 +1,4 @@
-import React, { Component, ReactChild } from "react";
+import React, { Component, ReactChild, MouseEvent } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import PropTypes from "prop-types";
 
@@ -33,7 +33,7 @@ export default () => {
     const collapsedClass = collapsed ? "open" : "collapsed";
     return (
       <div className={`card ${collapsedClass} ${theme}`}>
-        <h1>title</h1>
+        <h1>{title}</h1>
         {subtitle && <h2>{subtitle}</h2>}
         <p>{text}</p>
       </div>
@@ -57,7 +57,26 @@ export default () => {
 
   // ======== Exercise 5.2 ========
   // Notice that in `package.json`, we have "@types/react" as a dev dependency
-  // This exposes type definitions for common React structures (such as `props.children`)
+  // This exposes type definitions for common React structures (such as `props.children`) and events
+  // Instructions:
+  // • Created a type alias for the props
+  // • Declare a function type for `handleClick` accepting one parameter
+  //   of type `MouseEvent` (imported in the beggining of this file) and with no return value (`void`)
+
+  const Button = ({ handleClick, label }) => (
+    <button className="custom-button" onClick={handleClick}>
+      {label}
+    </button>
+  );
+
+  console.log(
+    "[Exercise 5.2]",
+    `PictureFrame: ${renderToStaticMarkup(
+      <Button label="Click me" handleClick={e => console.log(e.target)} />
+    )}`
+  );
+
+  // ======== Exercise 5.3 ========
   // Instructions:
   // • Created a type alias for the props
   // • Use `ReactChild` (imported in the beggining of this file) for `children`
@@ -70,7 +89,7 @@ export default () => {
   );
 
   console.log(
-    "[Exercise 5.2]",
+    "[Exercise 5.3]",
     `PictureFrame: ${renderToStaticMarkup(
       <PictureFrame legend="Random Picture">
         <img src="https://picsum.photos/200" role="presentation" />
@@ -78,7 +97,7 @@ export default () => {
     )}`
   );
 
-  // ======== Exercise 5.3 ========
+  // ======== Exercise 5.4 ========
   // Class components with no props and no state don't need any type annotation.
   // have no different between JavaScript and TypeScript.
   // Nothing to do on this exercise, just observe.
@@ -95,11 +114,11 @@ export default () => {
   }
 
   console.log(
-    "[Exercise 5.3]",
+    "[Exercise 5.4]",
     `Menu component: ${renderToStaticMarkup(<Menu />)}`
   );
 
-  // ======== Exercise 5.4 ========
+  // ======== Exercise 5.5 ========
   // Class components with props and state need have their types declared
   // Instructions:
   // • Declare the component State and Props types using the <> notation:
@@ -127,7 +146,7 @@ export default () => {
   }
 
   console.log(
-    "[Exercise 5.4]",
+    "[Exercise 5.5]",
     `Counter component: ${renderToStaticMarkup(<Counter initialCount={10} />)}`
   );
 };
