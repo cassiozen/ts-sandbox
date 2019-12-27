@@ -24,8 +24,8 @@
 // exercise4();
 
 // ======== Exercise 5: React  =========
-// import solution5 from './Exercise_5_React/solution5';
-// solution5();
+// import exercise5 from './Exercise_5_React/solution5';
+// exercise5();
 
 // ⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇⏇
 //   Solutions
