@@ -18,21 +18,13 @@ function readFileLine(file, line) {
   return files[file][line];
 }
 function customTSErrorFormatter(error, colors) {
-  const {
-    code,
-    source,
-    severity,
-    content,
-    file,
-    line,
-    character,
-    context
-  } = error;
+  const { code, severity, content, file, line, character, context } = error;
   const severityMsg =
     severity === "warning"
       ? colors.bold.yellow("warning")
       : colors.bold.red("error");
-  //const source = "teste"; //readFileLine(file, line - 1);
+  const source = readFileLine(file, line - 1);
+  console.log(source);
   const shortFile = file.substr(context.length);
   const colon = colors.white(":");
   const fileInfo = `${colors.cyan(shortFile)}${colon}${colors.yellow(
