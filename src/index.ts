@@ -15,7 +15,7 @@
 // import exercise2 from './Exercise_2_Union_Types/exercise2';
 // exercise2();
 
-// ======== Exercise 3: Interfaces ============
+// ======== Exercise 3: Type Aliases ============
 // import exercise3 from './Exercise_3_Type_Aliases/exercise3';
 // exercise3();
 
@@ -39,7 +39,7 @@
 // import solution2 from './Exercise_2_Union_Types/solution2';
 // solution2();
 
-// ======== Solution 3: Interfaces ============
+// ======== Solution 3: Type Aliases ============
 // import solution3 from './Exercise_3_Type_Aliases/solution3';
 // solution3();
 
